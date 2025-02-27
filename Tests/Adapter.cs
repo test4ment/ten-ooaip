@@ -71,14 +71,3 @@ public class CodeGenFeature
         );
     }
 }
-
-internal abstract class UObject
-{
-    public required IDictionary<string, object> properties;
-}
-
-internal interface IMoveable
-{
-    public Vector2 position {get; set;}
-    public Vector2 instant_velocity {get;}
-}
