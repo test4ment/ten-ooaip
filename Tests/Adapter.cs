@@ -9,7 +9,7 @@ namespace Tests;
 public class CodeGenFeature
 {
     [Fact]
-    public void GivenIoC()
+    public void AdapterCodeGen()
     {
         new InitScopeBasedIoCImplementationCommand().Execute();
 
