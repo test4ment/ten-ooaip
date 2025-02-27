@@ -1,8 +1,8 @@
 using System.Numerics;
 
-public abstract class UObject
+public interface UObject
 {
-    public required IDictionary<string, object> properties;
+    public IDictionary<string, object> properties {get;}
 }
 
 public interface IMoveable
