@@ -41,6 +41,9 @@ public class ShootingFeature{
 
 
         object_pool.VerifyAll();
-        // Assert.Equal()
+        Assert.Equal(
+            IoC.Resolve<UObject>("Object.Torpedo.Create", ship.Object.instant_velocity).properties["Instant velocity"],
+            ship.Object.instant_velocity
+        );
     }
 }
